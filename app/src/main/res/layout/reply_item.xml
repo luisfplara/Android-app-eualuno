@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/card_padding"
+    android:paddingRight="@dimen/card_padding">
+
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cardViewReply"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardElevation="@dimen/card_elevation"
+            card_view:cardCornerRadius="@dimen/card_corner_radius"
+            android:clickable="false"
+            android:focusable="false"
+            android:contextClickable="false"
+            android:focusableInTouchMode="false"
+            android:longClickable="false">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/relativeLayout"
+                android:padding="12dp">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:id="@+id/userPhoto"
+                    android:src="@drawable/ic_no_user"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:scaleType="fitXY"
+                    android:layout_marginRight="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Andre"
+                    android:id="@+id/card_author"
+                    android:layout_alignTop="@+id/userPhoto"
+                    android:layout_toEndOf="@+id/userPhoto"
+                    android:layout_marginTop="3dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Qua 18/05, 14:35"
+                    android:id="@+id/card_data_reply"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_toEndOf="@+id/card_author"
+                    android:layout_alignLeft="@+id/card_author"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignBottom="@+id/userPhoto" />
+
+            </RelativeLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:layout_below="@+id/relativeLayout"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="16dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula."
+                        android:id="@+id/card_reply_content"
+                        android:textColor="#000000"
+                        android:nestedScrollingEnabled="false"
+                        android:autoText="false"
+                        android:allowUndo="false"
+                        android:singleLine="false" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/layDownload"
+                        android:layout_marginTop="10dp"
+                        android:visibility="visible">
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Download"
+                            android:id="@+id/bt_anexo"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="New Text"
+                            android:id="@+id/nomeAnexo"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+</FrameLayout>

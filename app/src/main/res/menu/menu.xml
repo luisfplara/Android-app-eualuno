@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/menuLogout" android:title="Logout" />
+    <item android:id="@+id/refresh"
+        android:icon="@drawable/ic_refresh_white_24dp"
+        android:title="Atualizar"
+        android:alphabeticShortcut="r"
+        android:orderInCategory="1"
+        android:visible="false"
+        app:showAsAction="always" />
+    <item android:id="@+id/info"
+        android:icon="@drawable/ic_info_outline_white_24dp"
+        android:title="Informações"
+        android:alphabeticShortcut="i"
+        android:orderInCategory="2"
+        android:visible="false"
+        app:showAsAction="always" />
+    <item android:id="@+id/item2"
+        android:titleCondensed="Selecionar"
+        android:title="Selecionar"
+        app:actionViewClass="android.widget.CheckBox"
+        android:visible="false"
+        app:showAsAction="always"
+        android:checkable="true" />
+    <item
+        android:id="@+id/voltar"
+        android:orderInCategory="1"
+        android:visible="false"
+        android:title="Voltar" />
+
+</menu>
